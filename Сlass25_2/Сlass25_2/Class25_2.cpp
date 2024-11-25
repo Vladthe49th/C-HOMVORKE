@@ -2,6 +2,6 @@
 using namespace std;
 
 int main() {
-	cout << "Hello ld ld\n";
-	cout << "Hello wo wo\n";
+	cout << "2 + 2 is 4\n";
+	cout << "Minus one that`s three\n";
 }
