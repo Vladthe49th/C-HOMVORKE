@@ -134,7 +134,11 @@ public:
         os << "]";
         return os;
     }
+
+    
 };
+
+
 
 class Customer {
 private:
@@ -153,7 +157,11 @@ public:
 
     // Destroyer
     ~Customer() {
-        delete currentBooking;
+        if (currentBooking != nullptr)
+        {
+            delete currentBooking;
+            currentBooking = nullptr;
+        }
     }
 
     // Booking creation
@@ -188,5 +196,28 @@ public:
         }
         return os;
     }
+
+    void DeleteBooking() {
+        if (currentBooking != nullptr)
+        {
+            delete currentBooking;
+            currentBooking = nullptr;
+        }
+    }
 };
+int main() {
+    Customer customer("Vlad Yerts", 123);
+    int days[] = { 1, 2, 3 };
+    RoomBooking booking(101, days, 3, new Customer(customer));
+
+    customer.makeBooking(&booking);
+
+    std::cout << customer << "\n";
+
+    booking.addDay(4);
+    booking.printBooking();
+
+    booking.removeDay(2);
+    booking.printBooking();
+}
 
