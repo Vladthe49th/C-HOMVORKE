@@ -40,7 +40,7 @@ public:
 
     size_t Size() const { return size; }
 
-    void Enqueue(T data) // додавання елементів у кінець черги
+    void Enqueue(T data) // Add to queue list
     {
         Node<T>* newNode = new Node<T>(data);
         if (last == nullptr)
@@ -56,7 +56,7 @@ public:
         size++;
     }
 
-    T& Front() // отримання першого елемента
+    T& Front() // Get first elem
     {
         if (first == nullptr)
         {
@@ -65,7 +65,7 @@ public:
         return first->GetData();
     }
 
-    const T Front() const // для константного об'єкта
+    const T Front() const // for const. object
     {
         if (first == nullptr)
         {
@@ -74,7 +74,7 @@ public:
         return first->GetData();
     }
 
-    void Dequeue() // видалення першого елемента з черги
+    void Dequeue() // Delete first from queue
     {
         if (first == nullptr)
         {
@@ -115,7 +115,7 @@ int main()
         queue.Dequeue();
     }
 
-    // Черга для int
+    // int queue
     Queue<int> intQueue;
     intQueue.Enqueue(10);
     intQueue.Enqueue(20);
