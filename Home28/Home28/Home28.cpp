@@ -45,7 +45,7 @@ public:
         return size;
     }
 
-    void Push(T data) // додавання елементів на вершину
+    void Push(T data) // adding elems to the top
     {
         Node<T>* newNode = new Node<T>(data);
         newNode->SetNext(top);
@@ -53,7 +53,7 @@ public:
         size++;
     }
 
-    T& Peek() // отримаємо верхній елемент
+    T& Peek() // get the top elem
     {
         if (top == nullptr)
         {
@@ -62,7 +62,7 @@ public:
         return top->GetData();
     }
 
-    void Pop() // видалення верхнього елементу
+    void Pop() // pop the top weasel
     {
         if (top == nullptr)
         {
@@ -99,12 +99,12 @@ int main()
         stack.Pop();
     }
 
-    cout << "Now using stack with strings:" << endl;
+    cout << "Now using with strings:" << endl;
 
     Stack<string> stringStack;
     stringStack.Push("Hello");
-    stringStack.Push("World");
-    stringStack.Push("C++");
+    stringStack.Push("My dear");
+    stringStack.Push("Palmolive - the nejnyi gel");
     while (stringStack.GetSize() != 0)
     {
         cout << stringStack.Peek() << endl;
