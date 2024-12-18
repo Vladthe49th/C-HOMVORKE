@@ -27,4 +27,6 @@ int main()
 {
 	USB* phone = new Phone();
 	phone->Do();
+
+	cout << sizeof(*phone) << endl;
 }
