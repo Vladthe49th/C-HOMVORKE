@@ -124,11 +124,11 @@ int main() {
     Company company;
 
     // Some cars
-    company.addCar(new Car(std::make_unique<PetrolEngine>(150), "Toyota", 12345));
-    company.addCar(new Car(std::make_unique<ElectricEngine>(200), "Tesla Model", 54321));
-    company.addCar(new Car(std::make_unique<PetrolEngine>(180), "Honda", 11223));
-    company.addCar(new Car(std::make_unique<ElectricEngine>(250), "Nissan", 33221));
-    company.addCar(new Car(std::make_unique<PetrolEngine>(220), "Ford Mustang", 98765));
+    company.addCar(new Car(make_unique<PetrolEngine>(150), "Toyota", 12345));
+    company.addCar(new Car(make_unique<ElectricEngine>(200), "Tesla Model", 54321));
+    company.addCar(new Car(make_unique<PetrolEngine>(180), "Honda", 11223));
+    company.addCar(new Car(make_unique<ElectricEngine>(250), "Nissan", 33221));
+    company.addCar(new Car(make_unique<PetrolEngine>(220), "Ford Mustang", 98765));
 
     // Auto info
     cout << "Company Car Park:" << endl;
