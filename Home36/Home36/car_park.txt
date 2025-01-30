@@ -1,0 +1,20 @@
+Car #1:
+Car: Toyota Corolla, Serial Number: 12345
+Engine Details: Petrol Engine - Fuel type: Petrol, Power: 150 HP
+----------------------
+Car #2:
+Car: Tesla Model 3, Serial Number: 54321
+Engine Details: Electric Engine - Fuel type: Electric, Power: 200 HP
+----------------------
+Car #3:
+Car: Honda Civic, Serial Number: 11223
+Engine Details: Petrol Engine - Fuel type: Petrol, Power: 180 HP
+----------------------
+Car #4:
+Car: Nissan Leaf, Serial Number: 33221
+Engine Details: Electric Engine - Fuel type: Electric, Power: 250 HP
+----------------------
+Car #5:
+Car: Ford Mustang, Serial Number: 98765
+Engine Details: Petrol Engine - Fuel type: Petrol, Power: 220 HP
+----------------------
